@@ -1,0 +1,43 @@
+# Quartus build outputs
+db/
+incremental_db/
+output_files/
+simulation/
+*.rpt
+*.summary
+*.smsg
+*.qws
+*.bak
+*.log
+*.jdi
+*.sof
+*.pof
+*.sld
+*.cdf
+*.pin
+*.eqn
+*.done
+*.qdf
+*.qdz
+*.qip
+*.qxp
+*.qsys
+*.qmsg
+*.qch
+*.qic
+*.qsf.bak
+*.qpf.bak
+
+# Temporary files
+*.tmp
+*.~*
+*.swp
+*.lock
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# IDE metadata
+.idea/
+.vscode/
