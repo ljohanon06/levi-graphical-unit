@@ -17,6 +17,7 @@ $$C_r = \frac{C_{fg} \cdot A_{fg} + C_{bg} \cdot (255-A_{fg})}{255}$$
 Since division is a resource and time heavy task, unless the divisor is a power of 2, it is best to avoid it. 
 Since 255 is close to 256, we can approximate it by dividing by 256, which is represented by (x >> 8). 
 The following formula is used for this approximation.
+In addtion to this, 255 - x is the same as ~x for an 8 bit unsigned number.
 
 $$\frac{x}{255} \approx (x + 1 + (x >> 8)) >> 8$$
 
