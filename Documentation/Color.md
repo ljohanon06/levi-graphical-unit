@@ -10,7 +10,7 @@ In total 32 bits is used for each pixel color.
 It is often necessary to combine a foreground and a background color. 
 The following formula are used where r represents resulting color, fg is foreground color, and bg is background color.
 
-$$A_r = A_{fg} + \frac{A_{bg} \cdot (255-A_{fg})}{255}$$
+$$A_r = \frac{255 \cdot A_{fg} + A_{bg} \cdot (255-A_{fg})}{255}$$
 
 $$C_r = \frac{C_{fg} \cdot A_{fg} + C_{bg} \cdot (255-A_{fg})}{255}$$
 
