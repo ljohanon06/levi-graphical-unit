@@ -10,6 +10,8 @@ It has a built in boost converter because the display backlight requires 20V.
 
 - Custom PCB to adapt from the TFT 40 Pin Adapter to the DE10-Lite. The DE10-Lite has a 40 pin GPIO header which will be used to connect to the screen. The PCB also has a small ADC and connector attached because extra pins are needed for the ADC.
 
+- 2 Channel ADC: MCP3202-CI/P. Used to read the analog touchscreen values.
+
 ### TFT Pinout Information
 <img src="assets/TFT_Friend_Pinout.jpg" alt="Picture of TFT Friend with labeled pins]" width="50%">
 
