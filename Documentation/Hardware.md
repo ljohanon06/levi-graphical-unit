@@ -13,6 +13,10 @@ It has a built in boost converter because the display backlight requires 20V.
 ### TFT Pinout Information
 <img src="assets/TFT_Friend_Pinout.jpg" alt="Picture of TFT Friend with labeled pins]" width="50%">
 
-- RGB: There is an 8 bit channel for the red, green, and blue colors totalling 24 pins. Alpha is ignored when sending pixel data to the screen.
+- RGB: There is an 8 bit channel for the red, green, and blue colors totalling 24 pins. Alpha is ignored when sending pixel data to the screen. Read more about the colors in Color.md.
 
-- hi
+- Touchscreen: XL/R, YU/D are the controls for the touchscreen, read more in Touchscreen.md.
+
+- LK, LA, PWM: Standing for LED Cathode, LED Anode, and Pulse Width Modulation, these 3 pins control the LED backlight. Because the TFT adapter has a built-in boost converter, LK and LA do not need to be connected as they connect straight to the backlight. The PWM controls how bright the backlight is and will be controlled by the FPGA. The range is 5 to 100 kHz.
+
+- 
